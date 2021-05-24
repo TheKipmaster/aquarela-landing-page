@@ -10,6 +10,7 @@
     "scss": "node-sass -w public/stylesheets/scss -o public/stylesheets/css"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "body-parser": "~1.18.2",
     "debug": "~3.1.0",
     "ejs": "^3.1.6",
