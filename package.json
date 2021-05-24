@@ -3,10 +3,11 @@
   "version": "2.1.3",
   "private": true,
   "scripts": {
-    "start": "node app.js",
+    "start": "npm run scss & node app.js",
     "dev": "nodemon app.js",
     "lint": "eslint *.js",
-    "test": "node -c *.js"
+    "test": "node -c *.js",
+    "scss": "node-sass -w public/stylesheets/scss -o public/stylesheets/css"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -16,6 +17,7 @@
     "express": "~4.16.1",
     "method-override": "~2.3.10",
     "morgan": "~1.9.1",
+    "node-sass": "4.12",
     "prismic-dom": "~2.0.4",
     "prismic-javascript": "~1.4.0",
     "pug": "~2.0.0-rc.2",
