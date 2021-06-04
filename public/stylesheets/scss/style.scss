@@ -20,11 +20,274 @@ body {
   font-size: 18px;
   line-height: 35px;
   font-weight: 400;
-  letter-spacing: 0.45;
+  margin: 0;
   color: #516677;
-  // background-color: red;
+}
 
-  // #page-top {
-  //   background-color: green;
-  // }
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: $background-green;
+  padding: 15px 10px;
+  height: 25vh;
+
+  .logo {
+    flex: 1;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .not-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 5;
+
+    .contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: $font-green;
+
+      i {
+        flex: 1;
+        font-size: 5em;
+        align-self: center;
+        text-align: center;
+      }
+
+      .phone-numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex: 5;
+        // font-size: 1.5em;
+
+        div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-weight: bold;
+
+          .location {
+            color: $dark-blue;
+            font-size: 1.5em;
+          }
+
+          .number {
+            font-size: 2.5em;
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 2em;
+
+      a {
+        text-decoration: none;
+        color: $font-gray;
+      }
+    }
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light-gray;
+  padding: 1em 2em 0 2em;
+
+  h1 {
+    color: $font-gray;
+    font-size: 3.5em;
+    line-height: initial;
+    margin: 15px 0;
+  }
+
+  h2 {
+    color: $dark-blue;
+    margin: 0;
+    font-size: 1.8em;
+  }
+
+  p {
+    text-align: justify;
+    font-size: 2em;
+    line-height: initial;
+  }
+
+  .stars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 4em;
+    row-gap: 1em;
+    width: 100%;
+
+    font-size: 1.5em;
+    // line-height: 1.5em;
+
+    .star {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+      // justify-content: center;
+
+      .star-icon {
+        height: 50px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+
+    width: 100%;
+
+    .callout {
+      color: $dark-blue;
+      text-align: center;
+      font-size: 1.5em;
+      text-shadow:
+        0 0 7px $light-blue,
+        0 0 10px $dark-blue,
+        0 0 21px $dark-blue;
+
+      background-color: $dark-gray;
+      border-radius: 20px 20px 0 0;
+      width: fit-content;
+      padding: 0 2em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: $dark-blue;
+      border-radius: 20px;
+      padding: 40px 0;
+      margin-bottom: 2em;
+
+      input {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0.5em 0;
+        width: 20%;
+
+        border: none;
+        border-radius: 10px;
+      }
+
+      button {
+        width: 20%;
+
+        font-size: 1.5em;
+        color: white;
+        background-color: $font-green;
+        border: none;
+        border-radius: 10px;
+
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .compliments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    width: 100%;
+
+    .compliment {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // flex: 1;
+
+      .compliment-icon {
+        // width: 10em;
+
+        img {
+          height: 5em;
+        }
+      }
+    }
+  }
+
+  .signboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    width: 80%;
+
+    .whatsapp {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex: 1;
+      text-align: center;
+      line-height: 1.3em;
+
+      i {
+        color: $font-green;
+        font-size: 5em;
+        align-self: center;
+      }
+    }
+
+    .sign {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 3;
+
+      background-color: $dark-gray;
+      color: white;
+      font-size: 2.5em;
+      line-height: 1.5em;
+
+      border-radius: 20px 20px 0 0;
+
+      .neon {
+        color: $dark-blue;
+        text-shadow:
+          0 0 7px $light-blue,
+          0 0 10px $dark-blue,
+          0 0 21px $dark-blue;
+      }
+    }
+  }
+}
+
+.treatments {
+  background-color: $background-green;
+}
+
+// Styles for phone-sized screens
+@media (max-width: 480px) {
+  nav {
+    display: none;
+  }
 }

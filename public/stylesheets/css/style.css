@@ -7,5 +7,181 @@ body {
   font-size: 18px;
   line-height: 35px;
   font-weight: 400;
-  letter-spacing: 0.45;
+  margin: 0;
   color: #516677; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #D3E4D8;
+  padding: 15px 10px;
+  height: 25vh; }
+  nav .logo {
+    flex: 1; }
+    nav .logo img {
+      height: 100%; }
+  nav .not-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 5; }
+    nav .not-logo .contact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      color: #379B56; }
+      nav .not-logo .contact i {
+        flex: 1;
+        font-size: 5em;
+        align-self: center;
+        text-align: center; }
+      nav .not-logo .contact .phone-numbers {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex: 5; }
+        nav .not-logo .contact .phone-numbers div {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          font-weight: bold; }
+          nav .not-logo .contact .phone-numbers div .location {
+            color: #37659B;
+            font-size: 1.5em; }
+          nav .not-logo .contact .phone-numbers div .number {
+            font-size: 2.5em;
+            margin-top: 10px; }
+    nav .not-logo .navigation {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 2em; }
+      nav .not-logo .navigation a {
+        text-decoration: none;
+        color: #737373; }
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #E5E9ED;
+  padding: 1em 2em 0 2em; }
+  .intro h1 {
+    color: #737373;
+    font-size: 3.5em;
+    line-height: initial;
+    margin: 15px 0; }
+  .intro h2 {
+    color: #37659B;
+    margin: 0;
+    font-size: 1.8em; }
+  .intro p {
+    text-align: justify;
+    font-size: 2em;
+    line-height: initial; }
+  .intro .stars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 4em;
+    row-gap: 1em;
+    width: 100%;
+    font-size: 1.5em; }
+    .intro .stars .star {
+      display: flex;
+      align-items: center;
+      font-weight: bold; }
+      .intro .stars .star .star-icon {
+        height: 50px; }
+        .intro .stars .star .star-icon img {
+          height: 100%; }
+  .intro .call-to-action {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    width: 100%; }
+    .intro .call-to-action .callout {
+      color: #37659B;
+      text-align: center;
+      font-size: 1.5em;
+      text-shadow: 0 0 7px #D3E4E8, 0 0 10px #37659B, 0 0 21px #37659B;
+      background-color: #545454;
+      border-radius: 20px 20px 0 0;
+      width: fit-content;
+      padding: 0 2em; }
+    .intro .call-to-action form {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: #37659B;
+      border-radius: 20px;
+      padding: 40px 0;
+      margin-bottom: 2em; }
+      .intro .call-to-action form input {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 0.5em 0;
+        width: 20%;
+        border: none;
+        border-radius: 10px; }
+      .intro .call-to-action form button {
+        width: 20%;
+        font-size: 1.5em;
+        color: white;
+        background-color: #379B56;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer; }
+  .intro .compliments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%; }
+    .intro .compliments .compliment {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .intro .compliments .compliment .compliment-icon img {
+        height: 5em; }
+  .intro .signboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2em;
+    width: 80%; }
+    .intro .signboard .whatsapp {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      flex: 1;
+      text-align: center;
+      line-height: 1.3em; }
+      .intro .signboard .whatsapp i {
+        color: #379B56;
+        font-size: 5em;
+        align-self: center; }
+    .intro .signboard .sign {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex: 3;
+      background-color: #545454;
+      color: white;
+      font-size: 2.5em;
+      line-height: 1.5em;
+      border-radius: 20px 20px 0 0; }
+      .intro .signboard .sign .neon {
+        color: #37659B;
+        text-shadow: 0 0 7px #D3E4E8, 0 0 10px #37659B, 0 0 21px #37659B; }
+
+.treatments {
+  background-color: #D3E4D8; }
+
+@media (max-width: 480px) {
+  nav {
+    display: none; } }
