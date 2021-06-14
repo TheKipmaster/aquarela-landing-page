@@ -234,6 +234,51 @@ nav {
   .treatments .flickity-prev-next-button .arrow {
     fill: var(--blue-green-1); }
 
+.different {
+  display: flex;
+  flex-direction: row;
+  background-color: #E5E9ED;
+  padding: 1em;
+  font-size: 1.5em; }
+  .different .left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    flex: 5; }
+    .different .left .top {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      text-align: center; }
+      .different .left .top h2 {
+        margin: 0;
+        line-height: 1.5em;
+        color: #37659B; }
+      .different .left .top .wpp {
+        display: flex;
+        flex-direction: column; }
+        .different .left .top .wpp i {
+          font-size: 2.5em;
+          color: #379B56; }
+        .different .left .top .wpp span {
+          font-size: 1rem;
+          line-height: 1rem; }
+    .different .left .item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1.3em;
+      margin: 0.5em 0;
+      color: #545454; }
+      .different .left .item .icon {
+        flex: 1; }
+        .different .left .item .icon img {
+          width: 100%; }
+      .different .left .item span {
+        flex: 10; }
+  .different .phone {
+    flex: 3; }
+
 @media (max-width: 480px) {
   nav {
     display: none; } }
