@@ -17,6 +17,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/stylesheets/css/style.css" />
+    <!-- Carousel styles -->
+    <link rel="stylesheet" href="/javascript/vendors/flickity.min.css">
 
     <!-- Minified CSS -->
     <!-- <link rel="stylesheet" href="/stylesheets/index-5c180860b116b1aa8b39110c82abab73.min.css"> -->
@@ -62,6 +64,7 @@
         </ul>
       </div>
     </nav>
+
     <section class="intro">
       <h1>Odontologia Digital</h1>
       <h2>Você está pronto para ter o seu melhor sorriso?</h2>
@@ -140,14 +143,41 @@
         </div>
       </div>
     </section>
+
     <section class="treatments">
       <h1>Tratamentos</h1>
+
+      <div class="gallery js-flickity">
+        <a href="" class="gallery-cell">
+          <img src="/images/invisalign.jpg" alt="Invisalign"></img>
+          <button>Invisalign</button>
+        </a>
+        <a href="" class="gallery-cell">
+          <img src="/images/odontopediatria.jpg" alt="odontopediatria"></img>
+          <button>Odontopediatria</button>
+        </a>
+        <a href="" class="gallery-cell">
+          <img src="/images/aparelhos-transparentes.png" alt="Aparelhos Transparentes"></img>
+          <button>Aparelhos Transparentes</button>
+        </a>
+        <a href="" class="gallery-cell">
+          <img src="/images/restauracoes-esteticas.jpg" alt="Restaurações Estéticas"></img>
+          <button>Restaurações Estéticas</button>
+        </a>
+      </div>
+
+      <button class="call-to-action">
+        Entre em<br>contato!
+      </button>
     </section>
     <section class="different"></section>
     <section class="team"></section>
     <section class="testimonies"></section>
 
   </body>
+  <!-- Carousel JS -->
+  <script src="/javascript/vendors/flickity.pkgd.min.js"></script>
+  <script src="/javascript/vendors/main.js"></script>
   <!-- Font Awesome Icons -->
   <script src="https://kit.fontawesome.com/af6a9f2a9f.js" crossorigin="anonymous"></script>
 </html>

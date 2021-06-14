@@ -180,7 +180,59 @@ nav {
         text-shadow: 0 0 7px #D3E4E8, 0 0 10px #37659B, 0 0 21px #37659B; }
 
 .treatments {
-  background-color: #D3E4D8; }
+  display: flex;
+  flex-direction: column;
+  background-color: #D3E4D8;
+  padding-bottom: 2em;
+  /* small buttons, no circle */
+  /* arrow color */ }
+  .treatments h1 {
+    color: #379B56;
+    text-align: center;
+    font-size: 3.5em;
+    line-height: initial;
+    margin: 0;
+    padding: 1em 0; }
+  .treatments .call-to-action {
+    align-self: center;
+    width: 20%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 15px;
+    background-color: #379B56;
+    color: white;
+    font-size: 1.5em; }
+  .treatments .gallery {
+    margin-bottom: 3em; }
+  .treatments .gallery-cell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 30%;
+    margin-right: 10px;
+    cursor: pointer; }
+    .treatments .gallery-cell img {
+      width: 90%;
+      border-radius: 15px; }
+    .treatments .gallery-cell button {
+      width: 90%;
+      background-color: #379B56;
+      color: white;
+      margin-top: 1em;
+      border: none;
+      border-radius: 5px;
+      padding: 1rem 0;
+      cursor: pointer; }
+  .treatments .flickity-page-dots {
+    display: none; }
+  .treatments .flickity-prev-next-button {
+    width: 80px;
+    height: 80px;
+    background: transparent; }
+  .treatments .flickity-prev-next-button .arrow {
+    fill: var(--blue-green-1); }
 
 @media (max-width: 480px) {
   nav {
