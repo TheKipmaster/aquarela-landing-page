@@ -279,6 +279,79 @@ nav {
   .different .phone {
     flex: 3; }
 
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em 1.5em 0 1.5em;
+  background-color: #D3E4D8; }
+  .team h1 {
+    color: #379B56;
+    font-size: 3em; }
+  .team .members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: 80%; }
+    .team .members .member {
+      flex: 0 0 calc(22.66% - 20px);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin: 1em; }
+      .team .members .member .image {
+        flex: 2; }
+        .team .members .member .image img {
+          border-radius: 15px;
+          border: 5px #379B56 solid;
+          width: 100%; }
+      .team .members .member span {
+        flex: 1;
+        line-height: 1em;
+        color: #545454; }
+  .team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em; }
+    .team .container .call-to-action {
+      background-color: #37659B;
+      color: #379B56;
+      font-size: 1.5em;
+      padding: 0 2em;
+      border-radius: 15px 15px 0 0; }
+    .team .container .signboard {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%; }
+      .team .container .signboard .whatsapp {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex: 1;
+        text-align: center;
+        line-height: 1.3em; }
+        .team .container .signboard .whatsapp i {
+          color: #379B56;
+          font-size: 5em;
+          align-self: center; }
+      .team .container .signboard .sign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 3;
+        background-color: #545454;
+        color: white;
+        font-size: 2.5em;
+        line-height: 1.5em;
+        border-radius: 20px 20px 0 0; }
+        .team .container .signboard .sign .neon {
+          color: #37659B;
+          text-shadow: 0 0 7px #D3E4E8, 0 0 10px #37659B, 0 0 21px #37659B; }
+
 @media (max-width: 480px) {
   nav {
     display: none; } }

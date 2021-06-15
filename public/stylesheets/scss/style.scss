@@ -436,6 +436,119 @@ nav {
   }
 }
 
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5em 1.5em 0 1.5em;
+
+  background-color: $background-green;
+
+  h1 {
+    color: $font-green;
+    font-size: 3em;
+  }
+
+  .members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    width: 80%;
+
+    .member {
+      flex: 0 0 calc(22.66% - 20px);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      margin: 1em;
+
+      .image {
+        flex: 2;
+
+        img {
+          border-radius: 15px;
+          border: 5px $font-green solid;
+          width: 100%;
+        }
+      }
+
+      span {
+        flex: 1;
+        line-height: 1em;
+        color: $dark-gray;
+      }
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2em;
+
+    .call-to-action {
+      background-color: $dark-blue;
+      color: $font-green;
+      font-size: 1.5em;
+
+      padding: 0 2em;
+      border-radius: 15px 15px 0 0;
+      // text-shadow:
+      //   0 0 7px $background-green,
+      //   0 0 10px $font-green,
+      //   0 0 21px $font-green;
+    }
+
+    .signboard {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      width: 80%;
+
+      .whatsapp {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex: 1;
+        text-align: center;
+        line-height: 1.3em;
+
+        i {
+          color: $font-green;
+          font-size: 5em;
+          align-self: center;
+        }
+      }
+
+      .sign {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 3;
+
+        background-color: $dark-gray;
+        color: white;
+        font-size: 2.5em;
+        line-height: 1.5em;
+
+        border-radius: 20px 20px 0 0;
+
+        .neon {
+          color: $dark-blue;
+          text-shadow:
+            0 0 7px $light-blue,
+            0 0 10px $dark-blue,
+            0 0 21px $dark-blue;
+        }
+      }
+    }
+  }
+}
+
 // Styles for phone-sized screens
 @media (max-width: 480px) {
   nav {
