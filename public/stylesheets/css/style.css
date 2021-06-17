@@ -69,7 +69,8 @@ nav {
   flex-direction: column;
   align-items: center;
   background-color: #E5E9ED;
-  padding: 1em 2em 0 2em; }
+  padding: 1em 2em 0 2em;
+  font-size: 1em; }
   .intro h1 {
     color: #737373;
     font-size: 3.5em;
@@ -165,7 +166,7 @@ nav {
     width: 100%;
     background-color: #37659B;
     border-radius: 20px;
-    padding: 40px 0;
+    padding: 2em 0;
     margin-bottom: 2em; }
     .call-to-action form input {
       font-size: 1.5em;
@@ -289,10 +290,11 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 1.5em 1.5em 0 1.5em;
+  font-size: 1em;
   background-color: #D3E4D8; }
   .team h1 {
     color: #379B56;
-    font-size: 3em; }
+    font-size: 3.5em; }
   .team .members {
     display: flex;
     flex-direction: row;
@@ -340,7 +342,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center; }
-    .testimonies .footer button {
+    .testimonies .footer .more-testimonies {
       background-color: #379B56;
       color: white;
       font-size: 1.5em;
@@ -371,13 +373,89 @@ nav {
         .testimonies .footer .find-us .middle h1 {
           margin: 0.5em 0; }
         .testimonies .footer .find-us .middle .image {
-          width: 50%;
+          width: 50%; }
+          .testimonies .footer .find-us .middle .image img {
+            width: 100%; }
+        .testimonies .footer .find-us .middle span {
           color: red;
           font-size: 1em;
           text-align: center; }
-          .testimonies .footer .find-us .middle .image img {
-            width: 100%; }
 
 @media (max-width: 480px) {
+  .gallery .gallery-cell {
+    width: 80%; }
+  .gallery .flickity-prev-next-button {
+    display: none; }
+  .signboard {
+    width: 100%;
+    align-items: center; }
+    .signboard .sign {
+      text-align: center;
+      font-size: 2em;
+      line-height: inherit;
+      height: 100%; }
   nav {
-    display: none; } }
+    display: none; }
+  .intro {
+    padding: 0;
+    font-size: 0.5em; }
+    .intro .stars {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 0;
+      font-size: 1.5em; }
+    .intro .call-to-action .callout {
+      line-height: normal; }
+    .intro .compliments {
+      flex-wrap: wrap; }
+      .intro .compliments .compliment {
+        flex: 1; }
+        .intro .compliments .compliment .compliment-icon img {
+          height: 11em; }
+        .intro .compliments .compliment span {
+          font-size: 1.5em; }
+  .treatments {
+    font-size: 0.5em; }
+    .treatments .callout {
+      font-size: 2em;
+      width: 50%; }
+  .different {
+    font-size: 0.5em;
+    flex-direction: column; }
+    .different .left .item {
+      align-items: center;
+      flex-direction: column; }
+      .different .left .item .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .different .left .item .icon img {
+          width: 20%; }
+      .different .left .item span {
+        font-size: 2em;
+        text-align: center; }
+  .team {
+    font-size: 0.5em;
+    padding: 0; }
+    .team .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-gap: 1em;
+      width: 100%; }
+      .team .members .member {
+        flex: 1; }
+        .team .members .member .image img {
+          width: 80%; }
+        .team .members .member span {
+          font-size: 2em; }
+  .testimonies {
+    font-size: 0.5em; }
+    .testimonies .footer .more-testimonies {
+      font-size: 2em; }
+    .testimonies .footer .find-us {
+      flex-direction: column; }
+      .testimonies .footer .find-us .side span {
+        font-size: 2em; }
+      .testimonies .footer .find-us .middle .image {
+        width: 25%; }
+      .testimonies .footer .find-us .middle span {
+        font-size: 2em; } }

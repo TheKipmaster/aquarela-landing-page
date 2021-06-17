@@ -108,6 +108,7 @@ nav {
   align-items: center;
   background-color: $light-gray;
   padding: 1em 2em 0 2em;
+  font-size: 1em;
 
   h1 {
     color: $font-gray;
@@ -257,7 +258,7 @@ nav {
     width: 100%;
     background-color: $dark-blue;
     border-radius: 20px;
-    padding: 40px 0;
+    padding: 2em 0;
     margin-bottom: 2em;
 
     input {
@@ -443,12 +444,13 @@ nav {
   flex-direction: column;
   align-items: center;
   padding: 1.5em 1.5em 0 1.5em;
+  font-size: 1em;
 
   background-color: $background-green;
 
   h1 {
     color: $font-green;
-    font-size: 3em;
+    font-size: 3.5em;
   }
 
   .members {
@@ -526,7 +528,7 @@ nav {
     flex-direction: column;
     align-items: center;
 
-    button {
+    .more-testimonies {
       background-color: $font-green;
       color: white;
 
@@ -590,13 +592,16 @@ nav {
 
         .image {
           width: 50%;
-          color: red;
-          font-size: 1em;
-          text-align: center;
 
           img {
             width: 100%;
           }
+        }
+
+        span {
+          color: red;
+          font-size: 1em;
+          text-align: center;
         }
       }
     }
@@ -606,7 +611,158 @@ nav {
 
 // Styles for phone-sized screens
 @media (max-width: 480px) {
+  .gallery {
+    .gallery-cell {
+      width: 80%;
+    }
+
+    .flickity-prev-next-button {
+      display: none;
+    }
+  }
+
+  .signboard {
+    width: 100%;
+    align-items: center;
+
+    .sign {
+      text-align: center;
+      font-size: 2em;
+      line-height: inherit;
+      height: 100%;
+    }
+  }
+
   nav {
     display: none;
+  }
+
+  .intro {
+    padding: 0;
+    font-size: 0.5em;
+
+    .stars {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 0;
+      font-size: 1.5em;
+    }
+
+    .call-to-action {
+      .callout {
+        line-height: normal;
+      }
+
+      form {
+        // padding: 0;
+      }
+    }
+
+    .compliments {
+      flex-wrap: wrap;
+
+      .compliment {
+        flex: 1;
+
+        .compliment-icon {
+          img {
+            height: 11em;
+          }
+        }
+
+        span {
+          font-size: 1.5em;
+        }
+      }
+    }
+  }
+
+  .treatments {
+    font-size: 0.5em;
+
+    .callout {
+      font-size: 2em;
+      width: 50%;
+    }
+  }
+
+  .different {
+    font-size: 0.5em;
+    flex-direction: column;
+
+    .left {
+      .item {
+        align-items: center;
+        flex-direction: column;
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 20%;
+          }
+        }
+        span {
+          font-size: 2em;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .team {
+    font-size: 0.5em;
+    padding: 0;
+
+    .members {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      grid-gap: 1em;
+      width: 100%;
+
+      .member {
+        flex: 1;
+
+        .image {
+          img {
+            width: 80%;
+          }
+        }
+
+        span {
+          font-size: 2em;
+        }
+      }
+    }
+  }
+
+  .testimonies {
+    font-size: 0.5em;
+
+    .footer {
+      .more-testimonies {
+        font-size: 2em;
+      }
+
+      .find-us {
+        flex-direction: column;
+
+        .side {
+          span {
+            font-size: 2em;
+          }
+        }
+
+        .middle {
+          .image {
+            width: 25%;
+          }
+
+          span {
+            font-size: 2em;
+          }
+        }
+      }
+    }
   }
 }
