@@ -10,12 +10,9 @@ for ( var i=0, len = galleryElems.length; i < len; i++ ) {
   });
 }
 
-// var flkty = new Flickity('.gallery', {
-//   autoPlay: true,
-//   wrapAround: true,
-//   imagesLoaded: true,
-//   lazyLoad: 2
-// });
+document.querySelector(".sidebarMenuInner").addEventListener("click", (event) => {
+  document.querySelector("#openSidebarMenu").checked = false;
+});
 
 window.addEventListener('load', (event) => {
   flkty.resize();

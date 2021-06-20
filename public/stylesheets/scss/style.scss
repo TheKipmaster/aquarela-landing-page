@@ -25,6 +25,20 @@ body {
   color: #516677;
 }
 
+// Hide mobile only navigation menu
+
+#sidebarMenu {
+  display: none;
+}
+
+.sidebarIconToggle {
+  display: none;
+}
+
+.openSidebarMenu {
+  display: none;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -633,6 +647,122 @@ nav {
     }
   }
 
+  #sidebarMenu {
+    display: block;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    width: 250px;
+    z-index: 98;
+    transform: translateX(250px);
+    transition: transform 250ms ease-in-out;
+    background-color: $dark-blue;
+
+    .sidebarMenuInner {
+      margin: 0;
+      padding: 0;
+      border-top: 1px solid rgba(47, 148, 142, 0.1);
+
+      li {
+        list-style: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 18px;
+        cursor: pointer;
+        border-bottom: 1px solid rgba(47, 148, 142, 0.1);
+
+        a {
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  input[type=checkbox] {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    display: none;
+
+    &:checked~#sidebarMenu {
+      transform: translateX(0);
+      position: fixed;
+    }
+
+    &:checked~.sidebarIconToggle {
+      .horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        opacity: 0;
+      }
+
+      .diagonal.part-1 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(135deg);
+        margin-top: 8px;
+      }
+
+      .diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        transform: rotate(-135deg);
+        margin-top: -9px;
+      }
+    }
+  }
+
+  .sidebarIconToggle {
+    display: block;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    top: 28px;
+    right: 15px;
+    height: 22px;
+    width: 22px;
+
+    .spinner {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: #fff;
+
+      &.horizontal {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+      }
+
+      &.diagonal.part-1 {
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+        float: left;
+      }
+
+      &.diagonal.part-2 {
+        transition: all 0.3s;
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        margin-top: 3px;
+      }
+    }
+  }
+
   nav {
     font-size: 0.33em;
     height: fit-content;
@@ -644,8 +774,16 @@ nav {
 
     .not-logo {
       .contact {
+        i {
+          flex: none;
+        }
+
         .phone-numbers {
+          flex: none;
+
           div {
+            margin: 0 1em;
+
             .number {
               margin: 0;
               line-height: normal;
