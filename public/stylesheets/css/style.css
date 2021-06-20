@@ -374,6 +374,9 @@ nav {
           width: 30%; }
           .testimonies .footer .find-us .side .image img {
             width: 100%; }
+        .testimonies .footer .find-us .side iframe {
+          width: 22em;
+          height: 300px; }
       .testimonies .footer .find-us .middle {
         display: flex;
         flex-direction: column;
@@ -567,7 +570,13 @@ nav {
       flex-direction: column; }
       .testimonies .footer .find-us .side span {
         font-size: 2em; }
+      .testimonies .footer .find-us .side iframe {
+        width: 40em; }
       .testimonies .footer .find-us .middle .image {
         width: 25%; }
       .testimonies .footer .find-us .middle span {
         font-size: 2em; } }
+
+@media (max-width: 400px) {
+  nav .not-logo .contact i {
+    display: none; } }

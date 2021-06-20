@@ -583,15 +583,10 @@ nav {
           }
         }
 
-        // iframe {
-        //   body {
-        //     background-color: none;
-
-        //     #mapDiv {
-        //       border-radius: 15px 0 15px 0;
-        //     }
-        //   }
-        // }
+        iframe {
+          width: 22em;
+          height: 300px;
+        }
       }
 
       .middle {
@@ -915,6 +910,10 @@ nav {
           span {
             font-size: 2em;
           }
+
+          iframe {
+            width: 40em;
+          }
         }
 
         .middle {
@@ -925,6 +924,18 @@ nav {
           span {
             font-size: 2em;
           }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  nav {
+    .not-logo {
+      .contact {
+        i {
+          display: none;
         }
       }
     }
