@@ -60,7 +60,10 @@ nav {
             font-size: 1.5em; }
           nav .not-logo .contact .phone-numbers div .number {
             font-size: 2.5em;
-            margin-top: 10px; }
+            margin-top: 10px;
+            text-decoration: none;
+            color: #379B56;
+            cursor: default; }
     nav .not-logo .navigation {
       display: flex;
       flex-direction: row;
@@ -133,7 +136,10 @@ nav {
     align-content: center;
     flex: 1;
     text-align: center;
-    line-height: 1.3em; }
+    line-height: 1.3em;
+    cursor: pointer;
+    text-decoration: none;
+    color: #737373; }
     .signboard .whatsapp i {
       color: #379B56;
       font-size: 5em;
@@ -213,6 +219,8 @@ nav {
     border-radius: 15px;
     background-color: #379B56;
     color: white;
+    text-decoration: none;
+    text-align: center;
     font-size: 1.5em; }
 
 .gallery {
@@ -269,13 +277,16 @@ nav {
         margin: 0;
         line-height: 1.5em;
         color: #37659B; }
-      .different .left .top .wpp {
+      .different .left .top .whatsapp {
         display: flex;
-        flex-direction: column; }
-        .different .left .top .wpp i {
+        flex-direction: column;
+        cursor: pointer;
+        text-decoration: none;
+        color: #737373; }
+        .different .left .top .whatsapp i {
           font-size: 2.5em;
           color: #379B56; }
-        .different .left .top .wpp span {
+        .different .left .top .whatsapp span {
           font-size: 1rem;
           line-height: 1rem; }
     .different .left .item {
@@ -356,6 +367,8 @@ nav {
       color: white;
       font-size: 1.5em;
       padding: 0.5em 1.5em;
+      text-decoration: none;
+      text-align: center;
       border: none;
       border-radius: 15px;
       cursor: pointer; }

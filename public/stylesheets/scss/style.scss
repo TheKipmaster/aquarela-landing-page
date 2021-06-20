@@ -94,6 +94,9 @@ nav {
           .number {
             font-size: 2.5em;
             margin-top: 10px;
+            text-decoration: none;
+            color: $font-green;
+            cursor: default;
           }
         }
       }
@@ -210,6 +213,9 @@ nav {
     flex: 1;
     text-align: center;
     line-height: 1.3em;
+    cursor: pointer;
+    text-decoration: none;
+    color: $font-gray;
 
     i {
       color: $font-green;
@@ -317,14 +323,16 @@ nav {
 
   .callout {
     align-self: center;
-
     width: 20%;
+
     padding: 0.5em;
     border: none;
     border-radius: 15px;
     background-color: $font-green;
-    color: white;
 
+    color: white;
+    text-decoration: none;
+    text-align: center;
     font-size: 1.5em;
   }
 }
@@ -409,9 +417,12 @@ nav {
         color: $dark-blue;
       }
 
-      .wpp {
+      .whatsapp {
         display: flex;
         flex-direction: column;
+        cursor: pointer;
+        text-decoration: none;
+        color: $font-gray;
 
         i {
           font-size: 2.5em;
@@ -548,6 +559,8 @@ nav {
 
       font-size: 1.5em;
       padding: 0.5em 1.5em;
+      text-decoration: none;
+      text-align: center;
 
       border: none;
       border-radius: 15px;
