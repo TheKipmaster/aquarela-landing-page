@@ -84,36 +84,40 @@
     </nav>
 
     <section class="intro" id="intro">
-      <h1>Odontologia Digital</h1>
-      <h2>Você está pronto para ter o seu melhor sorriso?</h2>
+      <h1>
+        <%= PrismicDOM.RichText.asText(intro.data.title) %>
+      </h1>
+      <h2>
+        <%= PrismicDOM.RichText.asText(intro.data.subtitle) %>
+      </h2>
       <p>
-        Nossa missão é fornecer atendimento odontológico da mais alta qualidade em um ambiente confortável e familiar. Nossa clínica oferece uma gama abrangente de cuidados dentários, desde cuidados preventivos, restauradores e estéticos até casos de tratamento ortodôntico. Quer o seu objetivo seja uma dentição saudável e funcional ou uma remodelação do sorriso; Nossos dentistas trabalham com o desenvolvimento de um plano personalizado para seu bemestar oral contínuo partindo de suas necessidades.
+        <%= PrismicDOM.RichText.asText(intro.data.body) %>
       </p>
 
       <div class="stars">
         <div class="star">
           <div class="star-icon"><img src="/images/star.png" alt=""></div>
-          <span>Aparelhos Transparentes</span>
+          <span><%= intro.data.star1 %></span>
         </div>
         <div class="star">
           <div class="star-icon"><img src="/images/star.png" alt=""></div>
-          <span>Odontologia Preventiva</span>
+          <span><%= intro.data.star2 %></span>
         </div>
         <div class="star">
           <div class="star-icon"><img src="/images/star.png" alt=""></div>
-          <span>Odontologia Estética</span>
+          <span><%= intro.data.star3 %></span>
         </div>
         <div class="star">
           <div class="star-icon"><img src="/images/star.png" alt=""></div>
-          <span>Invisalign</span>
+          <span><%= intro.data.star4 %></span>
         </div>
         <div class="star">
           <div class="star-icon"><img src="/images/star.png" alt=""></div>
-          <span>Ortodontia</span>
+          <span><%= intro.data.star5 %></span>
         </div>
         <div class="star">
           <div class="star-icon"><img src="/images/star.png" alt=""></div>
-          <span>Odontopediatria</span>
+          <span><%= intro.data.star6 %></span>
         </div>
       </div>
 
@@ -166,22 +170,12 @@
       <h1>Tratamentos</h1>
 
       <div class="gallery js-flickity">
-        <a href="" class="gallery-cell">
-          <img src="/images/invisalign.jpg" alt="Invisalign"></img>
-          <button>Invisalign</button>
-        </a>
-        <a href="" class="gallery-cell">
-          <img src="/images/odontopediatria.jpg" alt="odontopediatria"></img>
-          <button>Odontopediatria</button>
-        </a>
-        <a href="" class="gallery-cell">
-          <img src="/images/aparelhos-transparentes.png" alt="Aparelhos Transparentes"></img>
-          <button>Aparelhos Transparentes</button>
-        </a>
-        <a href="" class="gallery-cell">
-          <img src="/images/restauracoes-esteticas.jpg" alt="Restaurações Estéticas"></img>
-          <button>Restaurações Estéticas</button>
-        </a>
+        <% treatments.map(treatment => { %>
+          <a href="<%= treatment.data.link.url %>" class="gallery-cell">
+            <img src="<%= treatment.data.picture.url %>" alt="<%= PrismicDOM.RichText.asText(treatment.data.name) %>"></img>
+            <button><%= PrismicDOM.RichText.asText(treatment.data.name) %></button>
+          </a>
+        <% }) %>
       </div>
 
       <a class="callout" href="https://api.whatsapp.com/send?phone=556191875504&text=Ol%C3%A1!%20Sou%20-%2C %20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20-">

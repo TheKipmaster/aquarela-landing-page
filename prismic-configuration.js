@@ -3,7 +3,7 @@ module.exports = {
   apiEndpoint: 'https://aquarela.prismic.io/api/v2',
 
   // -- Access token if the Master is not open
-  // accessToken: 'xxxxxx',
+  accessToken: process.env.ACCESS_TOKEN,
 
   // OAuth
   // clientId: 'xxxxxx',

@@ -1,6 +1,6 @@
+// const request = require('request');
 const Prismic = require('prismic-javascript');
 const PrismicDOM = require('prismic-dom');
-const request = require('request');
 const PrismicConfig = require('./prismic-configuration');
 const Onboarding = require('./onboarding');
 const app = require('./config');
@@ -40,8 +40,12 @@ app.use((req, res, next) => {
 /*
  * Route with documentation to build your project with prismic
  */
-app.get('/', (req, res) => {
-  res.render('index');
+app.get('/', async (req, res) => {
+  const treatmentResponse = await req.prismic.api.query(Prismic.Predicates.at('document.type', 'tratamento'));
+
+  const introResponse = await req.prismic.api.query(Prismic.Predicates.at('document.type', 'introducao'));
+
+  res.render('index', { treatments: treatmentResponse.results, intro: introResponse.results[0] });
 });
 
 /*
