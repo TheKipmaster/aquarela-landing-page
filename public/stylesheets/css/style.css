@@ -303,7 +303,37 @@ nav {
       .different .left .item span {
         flex: 10; }
   .different .phone {
-    flex: 3; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    color: #37659B;
+    background: no-repeat center/90% url("../../images/phone.png"); }
+    .different .phone h2 {
+      padding: 0 2.5em;
+      margin: 2em 0 0.5em 0;
+      text-align: center; }
+    .different .phone input {
+      background-color: #E5E9ED;
+      color: #37659B;
+      height: 2em;
+      width: 10em;
+      margin: 0.5em 0;
+      border-radius: 15px;
+      border: none;
+      text-align: center;
+      font-size: 1em; }
+      .different .phone input::placeholder {
+        color: #37659B;
+        text-align: center;
+        line-height: normal; }
+    .different .phone button {
+      border: none;
+      border-radius: 15px;
+      background-color: #379B56;
+      color: white;
+      font-size: 1em;
+      padding: 0.5em 1em; }
 
 .team {
   display: flex;
@@ -549,6 +579,10 @@ nav {
   .different {
     font-size: 0.5em;
     flex-direction: column; }
+    .different .left .top {
+      align-items: center; }
+      .different .left .top h2 {
+        font-size: 3.5em; }
     .different .left .item {
       align-items: center;
       flex-direction: column; }
@@ -561,6 +595,11 @@ nav {
       .different .left .item span {
         font-size: 2em;
         text-align: center; }
+    .different .phone {
+      height: 475px;
+      font-size: 1rem; }
+      .different .phone input {
+        width: 15em; }
   .team {
     font-size: 0.5em;
     padding: 0; }
@@ -584,7 +623,7 @@ nav {
       .testimonies .footer .find-us .side span {
         font-size: 2em; }
       .testimonies .footer .find-us .side iframe {
-        width: 40em; }
+        width: 95%; }
       .testimonies .footer .find-us .middle .image {
         width: 25%; }
       .testimonies .footer .find-us .middle span {
@@ -592,4 +631,6 @@ nav {
 
 @media (max-width: 400px) {
   nav .not-logo .contact i {
-    display: none; } }
+    display: none; }
+  .different .phone {
+    background: no-repeat center/100% url("../../images/phone.png"); } }
