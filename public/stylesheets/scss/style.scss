@@ -29,7 +29,7 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: $background-green;
-  padding: 15px 10px;
+  padding: 1em 0.5em;
   height: 25vh;
 
   .logo {
@@ -634,7 +634,33 @@ nav {
   }
 
   nav {
-    display: none;
+    font-size: 0.33em;
+    height: fit-content;
+    align-items: center;
+
+    .logo {
+      height: 10em;
+    }
+
+    .not-logo {
+      .contact {
+        .phone-numbers {
+          div {
+            .number {
+              margin: 0;
+              line-height: normal;
+            }
+            .location {
+              line-height: normal;
+            }
+          }
+        }
+      }
+
+      .navigation {
+        display: none;
+      }
+    }
   }
 
   .intro {

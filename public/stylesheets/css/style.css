@@ -15,7 +15,7 @@ nav {
   display: flex;
   flex-direction: row;
   background-color: #D3E4D8;
-  padding: 15px 10px;
+  padding: 1em 0.5em;
   height: 25vh; }
   nav .logo {
     flex: 1; }
@@ -395,7 +395,18 @@ nav {
       line-height: inherit;
       height: 100%; }
   nav {
-    display: none; }
+    font-size: 0.33em;
+    height: fit-content;
+    align-items: center; }
+    nav .logo {
+      height: 10em; }
+    nav .not-logo .contact .phone-numbers div .number {
+      margin: 0;
+      line-height: normal; }
+    nav .not-logo .contact .phone-numbers div .location {
+      line-height: normal; }
+    nav .not-logo .navigation {
+      display: none; }
   .intro {
     padding: 0;
     font-size: 0.5em; }
