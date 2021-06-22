@@ -22,8 +22,7 @@
     "prismic-dom": "~2.0.4",
     "prismic-javascript": "~1.4.0",
     "pug": "~2.0.0-rc.2",
-    "request": "~2.83.0",
-    "serve-favicon": "~2.4.3"
+    "request": "~2.83.0"
   },
   "repository": {
     "type": "git",
