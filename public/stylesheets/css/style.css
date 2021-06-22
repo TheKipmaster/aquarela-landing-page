@@ -174,7 +174,7 @@ nav {
     border-radius: 20px 20px 0 0;
     width: fit-content;
     padding: 0 2em; }
-  .call-to-action form {
+  .call-to-action .form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -183,14 +183,14 @@ nav {
     border-radius: 20px;
     padding: 2em 0;
     margin-bottom: 2em; }
-    .call-to-action form input {
+    .call-to-action .form input {
       font-size: 1.5em;
       text-align: center;
       padding: 0.5em 0;
       width: 20%;
       border: none;
       border-radius: 10px; }
-    .call-to-action form button {
+    .call-to-action .form button {
       width: 20%;
       font-size: 1.5em;
       color: white;
