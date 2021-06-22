@@ -271,7 +271,7 @@ nav {
     padding: 0 2em;
   }
 
-  form {
+  .form {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -862,10 +862,6 @@ nav {
     .call-to-action {
       .callout {
         line-height: normal;
-      }
-
-      form {
-        // padding: 0;
       }
     }
 

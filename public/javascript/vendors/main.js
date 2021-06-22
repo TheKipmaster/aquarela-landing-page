@@ -21,15 +21,20 @@ window.addEventListener('load', (event) => {
 
 document.querySelectorAll('#\\31, #\\32, #\\33').forEach((button) => {
   button.addEventListener('click', (event) => {
+    // Static bits of link
     const linkTemplateHead = 'https://api.whatsapp.com/send?l=pt_br&phone=556191875504&text=Olá,%20meu%20nome%20é%20';
     const linkTemplateTail = '%20e%20gostaria%20de%20uma%20avaliação%20para%20';
+
+    // Id of form user clicked
     const formId = event.target.id;
+    // Values of relevant fields formatted by replacing spaces with '%20'
     const treatment = document.querySelector(`#treatment${formId}`).value.replace(/\s/g, '%20');
     const nome = document.querySelector(`#name${formId}`).value.replace(/\s/gi, '%20');
 
+    // Complete link
     const link = `${linkTemplateHead}${nome}${linkTemplateTail}${treatment}`;
-    console.log(link);
 
+    // Redirects to link on click
     window.location.href = link;
   });
 });
