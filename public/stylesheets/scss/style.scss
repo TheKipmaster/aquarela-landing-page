@@ -853,10 +853,14 @@ nav {
     padding: 0;
     font-size: 0.5em;
 
+    p {
+      margin: 0 10px;
+    }
+
     .stars {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       grid-gap: 0;
-      font-size: 1.5em;
+      font-size: 1.3em;
     }
 
     .call-to-action {
@@ -938,13 +942,17 @@ nav {
     padding: 0;
 
     .members {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      grid-gap: 1em;
+      // display: grid;
+      // grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      // grid-gap: 1em;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap-reverse;
       width: 100%;
 
       .member {
-        flex: 1;
+        // flex: 1;
+        min-width: 150px;
 
         .image {
           img {
