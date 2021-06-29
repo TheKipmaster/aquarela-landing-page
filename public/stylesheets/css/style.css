@@ -599,7 +599,8 @@ nav {
         text-align: center; }
     .different .phone {
       height: 475px;
-      font-size: 1rem; }
+      font-size: 1rem;
+      flex: none; }
       .different .phone input {
         width: 15em; }
   .team {
