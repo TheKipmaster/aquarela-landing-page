@@ -95,7 +95,7 @@ nav {
   .intro p {
     text-align: justify;
     font-size: 2em;
-    line-height: initial; }
+    line-height: 1.5em; }
   .intro .stars {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -558,11 +558,16 @@ nav {
     padding: 0;
     font-size: 0.5em; }
     .intro p {
-      margin: 0 10px; }
+      margin: 0 36px; }
+    .intro h1 {
+      margin-bottom: 0; }
+    .intro h2 {
+      margin-bottom: 1em; }
     .intro .stars {
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       grid-gap: 0;
-      font-size: 1.3em; }
+      font-size: 1.3em;
+      width: 90%; }
     .intro .call-to-action .callout {
       line-height: normal; }
     .intro .compliments {

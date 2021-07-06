@@ -143,7 +143,8 @@ nav {
   p {
     text-align: justify;
     font-size: 2em;
-    line-height: initial;
+    line-height: 1.5em;
+    // line-height: initial;
   }
 
   .stars {
@@ -854,13 +855,22 @@ nav {
     font-size: 0.5em;
 
     p {
-      margin: 0 10px;
+      margin: 0 36px;
+    }
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin-bottom: 1em;
     }
 
     .stars {
       grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
       grid-gap: 0;
       font-size: 1.3em;
+      width: 90%;
     }
 
     .call-to-action {
