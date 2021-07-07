@@ -28,96 +28,174 @@ body {
   color: #516677;
 }
 
-// Hide mobile only navigation menu
-
 #sidebarMenu {
+  display: block;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  z-index: 98;
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+  background-color: $font-gray; // rgba(115, 115, 115, 0.7);
+
+  .sidebarMenuInner {
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid rgba(47, 148, 142, 0.1);
+
+    li {
+      list-style: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 18px;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(47, 148, 142, 0.1);
+
+      a {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+input[type=checkbox] {
+  transition: all 0.3s;
+  box-sizing: border-box;
   display: none;
+
+  &:checked~#sidebarMenu {
+    transform: translateX(0);
+    position: fixed;
+  }
+
+  &:checked~.sidebarIconToggle {
+    .horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      opacity: 0;
+    }
+
+    .diagonal.part-1 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(135deg);
+      margin-top: 15px;
+    }
+
+    .diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      transform: rotate(-135deg);
+      margin-top: -15px;
+    }
+  }
 }
 
 .sidebarIconToggle {
-  display: none;
-}
+  display: block;
+  transition: all 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+  position: absolute;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  top: 35px;
+  right: 25px;
+  height: 30px;
+  width: 30px;
 
-.openSidebarMenu {
-  display: none;
+  .spinner {
+    transition: all 0.3s;
+    box-sizing: border-box;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background-color: #fff;
+
+    &.horizontal {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 5px;
+    }
+
+    &.diagonal.part-1 {
+      position: relative;
+      transition: all 0.3s;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    &.diagonal.part-2 {
+      transition: all 0.3s;
+      box-sizing: border-box;
+      position: relative;
+      float: left;
+      margin-top: 5px;
+    }
+  }
 }
 
 nav {
   display: flex;
   flex-direction: row;
   background-color: $font-gray;
+  align-items: center;
   color: white;
-  padding: 1em 0.5em;
-  height: 25vh;
+  // padding: 1em 0.5em;
+  height: 15vh;
 
   .logo {
-    flex: 1;
+    height: 15vh;
+    margin-right: 12em;
+    // align-self: flex-start;
 
     img {
       height: 100%;
     }
   }
 
-  .not-logo {
+  // .not-logo {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: center;
+  //   align-items: center;
+  //   flex: 7;
+
+  i {
+    // flex: 1;
+    font-size: 3em;
+    align-self: center;
+    text-align: center;
+  }
+
+  .phone-number {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    flex: 5;
+    align-items: center;
+    font-weight: bold;
+    font-size: 0.75em;
+    margin-left: 2em;
 
-    .contact {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      i {
-        flex: 1;
-        font-size: 5em;
-        align-self: center;
-        text-align: center;
-      }
-
-      .phone-numbers {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex: 3;
-        // font-size: 1.5em;
-
-        div {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          font-weight: bold;
-
-          .location {
-            // color: $dark-blue;
-            font-size: 1.5em;
-          }
-
-          .number {
-            font-size: 2.5em;
-            margin-top: 10px;
-            text-decoration: none;
-            color: white;
-            cursor: default;
-          }
-        }
-      }
+    .location {
+      // color: $dark-blue;
+      font-size: 1.5em;
     }
 
-    .navigation {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 2em;
-
-      a {
-        text-decoration: none;
-        color: $font-gray;
-      }
+    .number {
+      font-size: 2.5em;
+      margin-top: 10px;
+      text-decoration: none;
+      color: white;
+      cursor: default;
     }
   }
 }
@@ -709,117 +787,32 @@ nav {
     }
   }
 
-  #sidebarMenu {
-    display: block;
-    height: 100%;
-    position: fixed;
-    right: 0;
-    width: 250px;
-    z-index: 98;
-    transform: translateX(250px);
-    transition: transform 250ms ease-in-out;
-    background-color: $dark-blue;
-
-    .sidebarMenuInner {
-      margin: 0;
-      padding: 0;
-      border-top: 1px solid rgba(47, 148, 142, 0.1);
-
-      li {
-        list-style: none;
-        color: #fff;
-        text-transform: uppercase;
-        font-weight: bold;
-        padding: 18px;
-        cursor: pointer;
-        border-bottom: 1px solid rgba(47, 148, 142, 0.1);
-
-        a {
-          color: #fff;
-          text-transform: uppercase;
-          font-weight: bold;
-          cursor: pointer;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-
   input[type=checkbox] {
-    transition: all 0.3s;
-    box-sizing: border-box;
-    display: none;
-
-    &:checked~#sidebarMenu {
-      transform: translateX(0);
-      position: fixed;
-    }
-
     &:checked~.sidebarIconToggle {
-      .horizontal {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        opacity: 0;
-      }
-
       .diagonal.part-1 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        transform: rotate(135deg);
         margin-top: 8px;
       }
 
       .diagonal.part-2 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        transform: rotate(-135deg);
         margin-top: -9px;
       }
     }
   }
 
   .sidebarIconToggle {
-    display: block;
-    transition: all 0.3s;
-    box-sizing: border-box;
-    cursor: pointer;
-    position: absolute;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
-    top: 28px;
+    top: 23px;
     right: 15px;
     height: 22px;
     width: 22px;
 
     .spinner {
-      transition: all 0.3s;
-      box-sizing: border-box;
-      position: absolute;
       height: 3px;
-      width: 100%;
-      background-color: #fff;
 
       &.horizontal {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
         margin-top: 3px;
       }
 
-      &.diagonal.part-1 {
-        position: relative;
-        transition: all 0.3s;
-        box-sizing: border-box;
-        float: left;
-      }
-
       &.diagonal.part-2 {
-        transition: all 0.3s;
-        box-sizing: border-box;
-        position: relative;
-        float: left;
         margin-top: 3px;
       }
     }
@@ -832,33 +825,26 @@ nav {
 
     .logo {
       height: 10em;
+      margin: 0;
     }
 
-    .not-logo {
-      .contact {
-        i {
-          flex: none;
-        }
+    // justify-content: flex-start;
 
-        .phone-numbers {
-          flex: none;
+    i {
+      flex: none;
+      font-size: 5em;
+    }
 
-          div {
-            margin: 0 1em;
+    .phone-number {
+      margin: 0 1em;
+      font-size: 1em;
 
-            .number {
-              margin: 0;
-              line-height: normal;
-            }
-            .location {
-              line-height: normal;
-            }
-          }
-        }
+      .number {
+        margin: 0;
+        line-height: normal;
       }
-
-      .navigation {
-        display: none;
+      .location {
+        line-height: normal;
       }
     }
   }
@@ -1035,12 +1021,8 @@ nav {
 
 @media (max-width: 400px) {
   nav {
-    .not-logo {
-      .contact {
-        i {
-          display: none;
-        }
-      }
+    i.fas.fa-phone-alt {
+      display: none;
     }
   }
 
