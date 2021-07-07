@@ -240,13 +240,18 @@ nav {
     border-radius: 20px;
     padding: 2em 0;
     margin-bottom: 2em; }
-    .call-to-action .form input {
+    .call-to-action .form input, .call-to-action .form select {
+      background-color: white;
+      color: #737373;
       font-size: 1.5em;
       text-align: center;
       padding: 0.5em 0;
       width: 20%;
+      text-align-last: center;
       border: none;
       border-radius: 10px; }
+      .call-to-action .form input option, .call-to-action .form select option {
+        color: #737373; }
     .call-to-action .form button {
       width: 20%;
       font-size: 1.5em;
@@ -372,7 +377,7 @@ nav {
       padding: 0 1.5em;
       margin: 2em 0 0.5em 0;
       text-align: center; }
-    .different .phone input {
+    .different .phone input, .different .phone select {
       background-color: #E5E9ED;
       color: #37659B;
       height: 2em;
@@ -380,9 +385,10 @@ nav {
       margin: 0.5em 0;
       border-radius: 15px;
       border: none;
+      text-align-last: center;
       text-align: center;
       font-size: 1em; }
-      .different .phone input::placeholder {
+      .different .phone input::placeholder, .different .phone select::placeholder {
         color: #37659B;
         text-align: center;
         line-height: normal; }
@@ -601,7 +607,7 @@ nav {
       flex: none; }
       .different .phone h2 {
         padding: 0 2.5em; }
-      .different .phone input {
+      .different .phone input, .different .phone select {
         width: 15em; }
   .team {
     font-size: 0.5em;

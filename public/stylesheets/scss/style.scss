@@ -366,14 +366,22 @@ nav {
     padding: 2em 0;
     margin-bottom: 2em;
 
-    input {
+    input, select {
+      background-color: white;
+
+      color: $font-gray;
       font-size: 1.5em;
       text-align: center;
       padding: 0.5em 0;
       width: 20%;
+      text-align-last: center;
 
       border: none;
       border-radius: 10px;
+
+      option {
+        color: $font-gray;
+      }
     }
 
     button {
@@ -560,7 +568,7 @@ nav {
       text-align: center;
     }
 
-    input {
+    input, select {
       background-color: $light-gray;
       color: $dark-blue;
       height: 2em;
@@ -568,6 +576,7 @@ nav {
       margin: 0.5em 0;
       border-radius: 15px;
       border: none;
+      text-align-last: center;
 
       text-align: center;
       font-size: 1em;
@@ -949,7 +958,7 @@ nav {
         padding: 0 2.5em;
       }
 
-      input {
+      input, select {
         width: 15em;
       }
     }
