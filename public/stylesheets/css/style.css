@@ -23,7 +23,8 @@ body {
 nav {
   display: flex;
   flex-direction: row;
-  background-color: #D3E4D8;
+  background-color: #737373;
+  color: white;
   padding: 1em 0.5em;
   height: 25vh; }
   nav .logo {
@@ -38,8 +39,7 @@ nav {
     nav .not-logo .contact {
       display: flex;
       flex-direction: row;
-      align-items: center;
-      color: #379B56; }
+      align-items: center; }
       nav .not-logo .contact i {
         flex: 1;
         font-size: 5em;
@@ -56,13 +56,12 @@ nav {
           align-items: center;
           font-weight: bold; }
           nav .not-logo .contact .phone-numbers div .location {
-            color: #37659B;
             font-size: 1.5em; }
           nav .not-logo .contact .phone-numbers div .number {
             font-size: 2.5em;
             margin-top: 10px;
             text-decoration: none;
-            color: #379B56;
+            color: white;
             cursor: default; }
     nav .not-logo .navigation {
       display: flex;
