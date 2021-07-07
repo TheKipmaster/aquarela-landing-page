@@ -133,6 +133,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-between;
     flex: 1;
     text-align: center;
     line-height: 1.3em;
@@ -141,7 +142,7 @@ nav {
     color: #737373; }
     .signboard .whatsapp i {
       color: #379B56;
-      font-size: 5em;
+      font-size: 4em;
       align-self: center; }
   .signboard .sign {
     display: flex;
@@ -443,6 +444,8 @@ nav {
   .signboard {
     width: 100%;
     align-items: center; }
+    .signboard .whatsapp i {
+      margin-bottom: 10px; }
     .signboard .sign {
       text-align: center;
       font-size: 2em;

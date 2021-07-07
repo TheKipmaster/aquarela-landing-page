@@ -211,6 +211,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-content: center;
+    justify-content: space-between;
     flex: 1;
     text-align: center;
     line-height: 1.3em;
@@ -220,7 +221,7 @@ nav {
 
     i {
       color: $font-green;
-      font-size: 5em;
+      font-size: 4em;
       align-self: center;
     }
   }
@@ -687,6 +688,12 @@ nav {
   .signboard {
     width: 100%;
     align-items: center;
+
+    .whatsapp {
+      i {
+        margin-bottom: 10px;
+      }
+    }
 
     .sign {
       text-align: center;
