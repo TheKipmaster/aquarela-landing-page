@@ -193,7 +193,6 @@ nav {
 
     .number {
       font-size: 2.5em;
-      margin-top: 10px;
       text-decoration: none;
       color: white;
       cursor: default;
@@ -231,8 +230,8 @@ nav {
 
   .stars {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    column-gap: 4em;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    column-gap: 1em;
     row-gap: 1em;
     width: 100%;
 
@@ -563,6 +562,7 @@ nav {
     background: no-repeat center/90% url("../../images/phone.png");
 
     h2 {
+      font-size: 1.3em;
       padding: 0 1.5em;
       margin: 2em 0 0.5em 0;
       text-align: center;
@@ -955,7 +955,7 @@ nav {
       flex: none;
 
       h2 {
-        padding: 0 2.5em;
+        padding: 0 3em;
       }
 
       input, select {
