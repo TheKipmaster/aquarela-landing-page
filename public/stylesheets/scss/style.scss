@@ -1,11 +1,14 @@
 // Variables
 $light-blue: #D3E4E8;
 $dark-blue: #37659B;
+$neon-blue: #427bbd;
 $light-gray: #E5E9ED;
 $dark-gray: #545454;
 $font-gray: #737373;
-$font-green: #379B56;
 $background-green: #D3E4D8;
+// $font-green: #379B56; // old green
+$font-green: #008037; // new green
+$neon-green: #00ad4b;
 // $cinza-horarios: #403E3E;
 
 html {
@@ -135,7 +138,7 @@ nav {
   }
 
   h2 {
-    color: $dark-blue;
+    color: $font-green;
     margin: 0;
     font-size: 1.8em;
   }
@@ -240,11 +243,11 @@ nav {
     border-radius: 20px 20px 0 0;
 
     .neon {
-      color: $font-green;
+      color: $neon-blue;
       text-shadow:
         // 0 0 7px $background-green,
-        0 0 10px $font-green,
-        0 0 21px $font-green;
+        0 0 10px $neon-blue,
+        0 0 21px $neon-blue;
     }
   }
 }
@@ -259,15 +262,16 @@ nav {
   width: 100%;
 
   .callout {
-    color: $font-green;
+    color: $neon-blue;
     text-align: center;
     font-size: 1.5em;
     text-shadow:
-      // 0 0 7px $background-green,
-      0 0 10px $font-green,
-      0 0 21px $font-green;
+      // 0 0  7px $dark-blue;
+      0 0 10px $neon-blue,
+      0 0 21px $neon-blue;
 
     background-color: $dark-gray;
+    // background-color: white;
     border-radius: 20px 20px 0 0;
     width: fit-content;
     padding: 0 2em;
@@ -278,7 +282,7 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    background-color: $dark-blue;
+    background-color: $font-green;
     border-radius: 20px;
     padding: 2em 0;
     margin-bottom: 2em;
@@ -298,7 +302,7 @@ nav {
 
       font-size: 1.5em;
       color: white;
-      background-color: $font-green;
+      background-color: $dark-blue;
       border: none;
       border-radius: 10px;
 
@@ -563,15 +567,15 @@ nav {
 
     .callout {
       background-color: $dark-blue;
-      color: $font-green;
+      color: $neon-green;
       font-size: 1.5em;
 
       padding: 0 2em;
       border-radius: 15px 15px 0 0;
-      // text-shadow:
-      //   0 0 7px $background-green,
-      //   0 0 10px $font-green,
-      //   0 0 21px $font-green;
+      text-shadow:
+        // 0 0 7px $background-green,
+        0 0 10px $neon-green,
+        0 0 21px $neon-green;
     }
 
 
@@ -613,11 +617,11 @@ nav {
       .callout {
         padding: 0.5em 2em;
 
-        color: $font-green;
+        color: $neon-green;
         text-shadow:
           // 0 0 7px $background-green,
-          0 0 10px $font-green,
-          0 0 21px $font-green;
+          0 0 10px $neon-green,
+          0 0 21px $neon-green;
       }
     }
 

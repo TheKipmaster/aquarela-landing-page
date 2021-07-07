@@ -88,7 +88,7 @@ nav {
     line-height: initial;
     margin: 15px 0; }
   .intro h2 {
-    color: #37659B;
+    color: #008037;
     margin: 0;
     font-size: 1.8em; }
   .intro p {
@@ -141,7 +141,7 @@ nav {
     text-decoration: none;
     color: #737373; }
     .signboard .whatsapp i {
-      color: #379B56;
+      color: #008037;
       font-size: 4em;
       align-self: center; }
   .signboard .sign {
@@ -155,8 +155,8 @@ nav {
     line-height: 1.5em;
     border-radius: 20px 20px 0 0; }
     .signboard .sign .neon {
-      color: #379B56;
-      text-shadow: 0 0 10px #379B56, 0 0 21px #379B56; }
+      color: #427bbd;
+      text-shadow: 0 0 10px #427bbd, 0 0 21px #427bbd; }
 
 .call-to-action {
   display: flex;
@@ -166,10 +166,10 @@ nav {
   margin-top: 2em;
   width: 100%; }
   .call-to-action .callout {
-    color: #379B56;
+    color: #427bbd;
     text-align: center;
     font-size: 1.5em;
-    text-shadow: 0 0 10px #379B56, 0 0 21px #379B56;
+    text-shadow: 0 0 10px #427bbd, 0 0 21px #427bbd;
     background-color: #545454;
     border-radius: 20px 20px 0 0;
     width: fit-content;
@@ -179,7 +179,7 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
-    background-color: #37659B;
+    background-color: #008037;
     border-radius: 20px;
     padding: 2em 0;
     margin-bottom: 2em; }
@@ -194,7 +194,7 @@ nav {
       width: 20%;
       font-size: 1.5em;
       color: white;
-      background-color: #379B56;
+      background-color: #37659B;
       border: none;
       border-radius: 10px;
       cursor: pointer; }
@@ -205,7 +205,7 @@ nav {
   background-color: #D3E4D8;
   padding-bottom: 2em; }
   .treatments h1 {
-    color: #379B56;
+    color: #008037;
     text-align: center;
     font-size: 3.5em;
     line-height: initial;
@@ -217,7 +217,7 @@ nav {
     padding: 0.5em;
     border: none;
     border-radius: 15px;
-    background-color: #379B56;
+    background-color: #008037;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -241,7 +241,7 @@ nav {
       border-radius: 15px; }
     .gallery .gallery-cell button {
       width: 90%;
-      background-color: #379B56;
+      background-color: #008037;
       color: white;
       margin-top: 1em;
       border: none;
@@ -285,7 +285,7 @@ nav {
         color: #737373; }
         .different .left .top .whatsapp i {
           font-size: 2.5em;
-          color: #379B56; }
+          color: #008037; }
         .different .left .top .whatsapp span {
           font-size: 1rem;
           line-height: 1rem; }
@@ -330,7 +330,7 @@ nav {
     .different .phone button {
       border: none;
       border-radius: 15px;
-      background-color: #379B56;
+      background-color: #008037;
       color: white;
       font-size: 1em;
       padding: 0.5em 1em; }
@@ -343,7 +343,7 @@ nav {
   font-size: 1em;
   background-color: #D3E4D8; }
   .team h1 {
-    color: #379B56;
+    color: #008037;
     font-size: 3.5em; }
   .team .members {
     display: flex;
@@ -361,7 +361,7 @@ nav {
         flex: 2; }
         .team .members .member .image img {
           border-radius: 15px;
-          border: 5px #379B56 solid;
+          border: 5px #008037 solid;
           width: 100%; }
       .team .members .member span {
         flex: 1;
@@ -375,10 +375,11 @@ nav {
     margin-top: 2em; }
     .team .container .callout {
       background-color: #37659B;
-      color: #379B56;
+      color: #00ad4b;
       font-size: 1.5em;
       padding: 0 2em;
-      border-radius: 15px 15px 0 0; }
+      border-radius: 15px 15px 0 0;
+      text-shadow: 0 0 10px #00ad4b, 0 0 21px #00ad4b; }
 
 .testimonies {
   background-color: #E5E9ED;
@@ -393,7 +394,7 @@ nav {
     flex-direction: column;
     align-items: center; }
     .testimonies .footer .more-testimonies {
-      background-color: #379B56;
+      background-color: #008037;
       color: white;
       font-size: 1.5em;
       padding: 0.5em 1.5em;
@@ -404,8 +405,8 @@ nav {
       cursor: pointer; }
     .testimonies .footer .call-to-action .callout {
       padding: 0.5em 2em;
-      color: #379B56;
-      text-shadow: 0 0 10px #379B56, 0 0 21px #379B56; }
+      color: #00ad4b;
+      text-shadow: 0 0 10px #00ad4b, 0 0 21px #00ad4b; }
     .testimonies .footer .find-us {
       display: flex;
       flex-direction: row; }
