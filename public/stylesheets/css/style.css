@@ -267,11 +267,12 @@ nav {
     display: flex;
     flex-direction: column;
     margin-top: 2em;
-    flex: 5; }
+    flex: 5;
+    padding: 0 0 0 2em; }
     .different .left .top {
       display: flex;
       flex-direction: row;
-      justify-content: space-evenly;
+      justify-content: space-between;
       text-align: center; }
       .different .left .top h2 {
         margin: 0;
@@ -280,6 +281,7 @@ nav {
       .different .left .top .whatsapp {
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
         cursor: pointer;
         text-decoration: none;
         color: #737373; }
@@ -310,7 +312,7 @@ nav {
     color: #37659B;
     background: no-repeat center/90% url("../../images/phone.png"); }
     .different .phone h2 {
-      padding: 0 2.5em;
+      padding: 0 1.5em;
       margin: 2em 0 0.5em 0;
       text-align: center; }
     .different .phone input {
@@ -589,26 +591,30 @@ nav {
   .different {
     font-size: 0.5em;
     flex-direction: column; }
-    .different .left .top {
-      align-items: center; }
-      .different .left .top h2 {
-        font-size: 3.5em; }
-    .different .left .item {
-      align-items: center;
-      flex-direction: column; }
-      .different .left .item .icon {
-        display: flex;
-        justify-content: center;
+    .different .left {
+      padding: 0; }
+      .different .left .top {
         align-items: center; }
-        .different .left .item .icon img {
-          width: 20%; }
-      .different .left .item span {
-        font-size: 2em;
-        text-align: center; }
+        .different .left .top h2 {
+          font-size: 3.5em; }
+      .different .left .item {
+        align-items: center;
+        flex-direction: column; }
+        .different .left .item .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          .different .left .item .icon img {
+            width: 20%; }
+        .different .left .item span {
+          font-size: 2em;
+          text-align: center; }
     .different .phone {
-      height: 475px;
+      height: 500px;
       font-size: 1rem;
       flex: none; }
+      .different .phone h2 {
+        padding: 0 2.5em; }
       .different .phone input {
         width: 15em; }
   .team {
