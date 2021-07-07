@@ -576,7 +576,8 @@ nav {
     .intro .call-to-action .callout {
       line-height: normal; }
     .intro .compliments {
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+      width: 85%; }
       .intro .compliments .compliment {
         flex: 1; }
         .intro .compliments .compliment .compliment-icon img {
