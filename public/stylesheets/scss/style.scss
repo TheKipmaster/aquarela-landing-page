@@ -769,6 +769,10 @@ nav {
 
 // Styles for phone-sized screens
 @media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
   .gallery {
     .gallery-cell {
       width: 80%;
@@ -829,7 +833,7 @@ nav {
   }
 
   nav {
-    font-size: 0.33em;
+    font-size: 0.4em;
     height: fit-content;
     align-items: center;
 
@@ -890,10 +894,9 @@ nav {
 
     .compliments {
       flex-wrap: wrap;
-      width: 85%;
 
       .compliment {
-        flex: 1;
+        width: 50%;
 
         .compliment-icon {
           img {
@@ -956,6 +959,7 @@ nav {
 
       h2 {
         padding: 0 3em;
+        margin-top: 3em;
       }
 
       input, select {

@@ -503,6 +503,8 @@ nav {
           text-align: center; }
 
 @media (max-width: 480px) {
+  body {
+    font-size: 14px; }
   .gallery .gallery-cell {
     width: 80%; }
   .gallery .flickity-prev-next-button {
@@ -533,7 +535,7 @@ nav {
       .sidebarIconToggle .spinner.diagonal.part-2 {
         margin-top: 3px; }
   nav {
-    font-size: 0.33em;
+    font-size: 0.4em;
     height: fit-content;
     align-items: center; }
     nav .logo {
@@ -567,10 +569,9 @@ nav {
     .intro .call-to-action .callout {
       line-height: normal; }
     .intro .compliments {
-      flex-wrap: wrap;
-      width: 85%; }
+      flex-wrap: wrap; }
       .intro .compliments .compliment {
-        flex: 1; }
+        width: 50%; }
         .intro .compliments .compliment .compliment-icon img {
           height: 11em; }
         .intro .compliments .compliment span {
@@ -606,7 +607,8 @@ nav {
       font-size: 1rem;
       flex: none; }
       .different .phone h2 {
-        padding: 0 3em; }
+        padding: 0 3em;
+        margin-top: 3em; }
       .different .phone input, .different .phone select {
         width: 15em; }
   .team {
