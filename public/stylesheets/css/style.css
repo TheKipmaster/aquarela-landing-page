@@ -502,7 +502,55 @@ nav {
           font-size: 1em;
           text-align: center; }
 
-@media (max-width: 480px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 14px; }
+  .gallery .gallery-cell {
+    width: 80%; }
+  .gallery .flickity-prev-next-button {
+    display: none; }
+  .sidebarIconToggle {
+    top: 42px; }
+  .signboard {
+    width: 100%; }
+    .signboard .sign {
+      font-size: 2em; }
+  nav {
+    height: fit-content; }
+    nav .logo {
+      height: 8em;
+      margin: 0; }
+  .intro p {
+    width: 90%; }
+  .intro .compliments .compliment .compliment-icon {
+    font-size: 1.5em; }
+  .intro .compliments .compliment span {
+    font-size: 1em; }
+  .intro .stars {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    font-size: 1.5em;
+    width: 95%; }
+  .different {
+    flex-direction: column;
+    align-items: center; }
+    .different .left {
+      padding: 0 2em; }
+    .different .phone {
+      height: 485px;
+      width: 50%; }
+  .team .members {
+    font-size: 1.3em;
+    width: 100%; }
+  .testimonies .footer .find-us {
+    flex-direction: column; }
+    .testimonies .footer .find-us .middle span {
+      font-size: 2em; }
+    .testimonies .footer .find-us .side span {
+      font-size: 2em; }
+    .testimonies .footer .find-us .side iframe {
+      width: 35em; } }
+
+@media only screen and (max-width: 480px) {
   body {
     font-size: 14px; }
   .gallery .gallery-cell {
@@ -556,7 +604,7 @@ nav {
     padding: 0;
     font-size: 0.5em; }
     .intro p {
-      margin: 0 36px; }
+      width: 85%; }
     .intro h1 {
       margin-bottom: 0; }
     .intro h2 {

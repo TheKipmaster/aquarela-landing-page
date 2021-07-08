@@ -767,8 +767,113 @@ nav {
 
 }
 
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .gallery {
+    .gallery-cell {
+      width: 80%;
+    }
+
+    .flickity-prev-next-button {
+      display: none;
+    }
+  }
+
+  .sidebarIconToggle {
+    top: 42px;
+  }
+
+  .signboard {
+    width: 100%;
+
+    .sign {
+      font-size: 2em;
+    }
+  }
+
+  nav {
+    height: fit-content;
+    .logo {
+      height: 8em;
+      margin: 0;
+    }
+  }
+
+  .intro {
+    p {
+      width: 90%;
+    }
+
+    .compliments {
+      .compliment {
+        .compliment-icon {
+          font-size: 1.5em;
+        }
+
+        span {
+          font-size: 1em;
+        }
+      }
+    }
+
+    .stars {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      font-size: 1.5em;
+      width: 95%;
+    }
+  }
+
+  .different {
+    flex-direction: column;
+    align-items: center;
+
+    .left {
+      padding: 0 2em;
+    }
+
+    .phone {
+      height: 485px;
+      width: 50%;
+    }
+  }
+
+  .team {
+    .members {
+      font-size: 1.3em;
+      width: 100%;
+    }
+  }
+
+  .testimonies {
+    .footer {
+      .find-us {
+        flex-direction: column;
+
+        .middle {
+          span {
+            font-size: 2em;
+          }
+        }
+
+        .side {
+          span {
+            font-size: 2em;
+          }
+          iframe {
+            width: 35em;
+          }
+        }
+      }
+    }
+  }
+}
+
 // Styles for phone-sized screens
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   body {
     font-size: 14px;
   }
@@ -868,7 +973,7 @@ nav {
     font-size: 0.5em;
 
     p {
-      margin: 0 36px;
+      width: 85%;
     }
 
     h1 {
@@ -1032,6 +1137,8 @@ nav {
     }
   }
 }
+
+// Fixes for extra-small screens
 
 @media (max-width: 400px) {
   nav {
